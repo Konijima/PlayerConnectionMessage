@@ -10,7 +10,7 @@ local function OnTick(tick)
     local players = getOnlinePlayers() or ArrayList.new()
 
     --- Add ticks based on amount of online players
-    if ticks <= players:size() then ticks = ticks + tick return end
+    if ticks <= players:size() + 1 then ticks = ticks + tick return end
     ticks = 0
     
     --- Look for player connected
