@@ -106,12 +106,14 @@ function PlayerConnectionMessage.appendToLog(username, role, event, killer)
 	local writer = getFileWriter('PlayerConnectionMessage.jsonl', true, true)
 	if writer then
 		if killer then
-			writer:writeln('{"username": "' .. tostring(username) .. '", "role": "' .. tostring(role) .. '", "event": "' .. tostring(event) .. '", "killer": "' .. tostring(killer) .. '"}')
+			writer:writeln('{"username": "' .. tostring(username) .. '", "role": "' .. tostring(role) .. '", "event": "' .. tostring(event) .. '", "killer": "' .. tostring(killer) .. '", "time": ' .. getTimestampMs() .. '}')
 		else
-			writer:writeln('{"username": "' .. tostring(username) .. '", "role": "' .. tostring(role) .. '", "event": "' .. tostring(event) .. '"}')
+			writer:writeln('{"username": "' .. tostring(username) .. '", "role": "' .. tostring(role) .. '", "event": "' .. tostring(event) .. '", "time": ' .. getTimestampMs() .. '}')
 		end
 		writer:close()
 	end
 end
 
 return PlayerConnectionMessage
+
+-- /reloadlua shared/PlayerConnectionMessage/utils.lua
