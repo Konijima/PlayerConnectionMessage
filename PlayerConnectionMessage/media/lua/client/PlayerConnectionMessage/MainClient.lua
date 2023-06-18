@@ -16,3 +16,5 @@ local function onServerCommand(module, command, args)
     end
 end
 Events.OnServerCommand.Add(onServerCommand)
+
+-- /reloadlua client/PlayerConnectionMessage/MainClient.lua
