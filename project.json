@@ -1,0 +1,27 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Konijima/project-zomboid-studio/master/pzstudio.schema.json",
+    "title": "Player Connection Message",
+    "authors": [
+        "Konijima"
+    ],
+    "workshop": {
+        "id": 2823707388,
+        "visibility": "public",
+        "tags": [
+            "Build 41",
+            "Multiplayer"
+        ],
+        "excludes": []
+    },
+    "mods": {
+        "PlayerConnectionMessage": {
+            "name": "Player Connection Message",
+            "description": "Stay informed about player activity on your server. Announce join/leave events, deaths, and kills. Log events as JSONL and customize message visibility and colors. Stay connected with the Player Connection Message mod.",
+            "poster": [
+                "poster.png",
+                "poster2.png",
+                "poster3.png"
+            ]
+        }
+    }
+}

@@ -1,0 +1,11 @@
+[b]Player Connection Message[/b] enhances your server by providing comprehensive announcements for player-related events. 
+
+Stay informed about who joins or leaves the server, as well as when players meet their demise or score kills. 
+
+The mod also logs these events in JSONL format for convenient analysis.
+File can be found on the server at this path: [code]lua/PlayerConnectionMessage.jsonl[/code] 
+
+With customizable sandbox settings, 
+- Hide connection messages for admins, moderators, and staff.
+- Hide death and/or kill messages.
+- Customize the message colors to suit your preferences. 

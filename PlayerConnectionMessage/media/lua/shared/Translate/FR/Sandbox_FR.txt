@@ -1,0 +1,38 @@
+Sandbox_FR = {
+
+    Sandbox_PlayerConnectionMessage = "Message de Connexion du Joueur",
+
+    Sandbox_PlayerConnectionMessage_disableDeathMessage = "Désactiver les messages de mort",
+    Sandbox_PlayerConnectionMessage_disableDeathMessage_tooltip = "Définir sur 'true' pour désactiver les messages de mort incluant les messages de meurtre",
+
+    Sandbox_PlayerConnectionMessage_disableKillMessage = "Désactiver les messages de meurtre",
+    Sandbox_PlayerConnectionMessage_disableKillMessage_tooltip = "Définir sur 'true' pour désactiver les messages de meurtre seulement",
+
+    Sandbox_PlayerConnectionMessage_hideAdmin = "Cacher l'administrateur",
+    Sandbox_PlayerConnectionMessage_hideAdmin_tooltip = "Définir sur 'true' pour cacher les messages de connexion de l'administrateur",
+
+    Sandbox_PlayerConnectionMessage_hideModerator = "Cacher le modérateur",
+    Sandbox_PlayerConnectionMessage_hideModerator_tooltip = "Définir sur 'true' pour cacher les messages de connexion du modérateur",
+
+    Sandbox_PlayerConnectionMessage_hideStaff = "Cacher le personnel",
+    Sandbox_PlayerConnectionMessage_hideStaff_tooltip = "Définir sur 'true' pour cacher les messages de connexion du personnel",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorRed = "Couleur RVB du message de connexion (rouge)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorRed_tooltip = "Définir la valeur rouge du message de connexion de 0.0 à 1.0",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorGreen = "Couleur RVB du message de connexion (vert)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorGreen_tooltip = "Définir la valeur verte du message de connexion de 0.0 à 1.0",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorBlue = "Couleur RVB du message de connexion (bleu)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorBlue_tooltip = "Définir la valeur bleue du message de connexion de 0.0 à 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorRed = "Couleur RVB du message de déconnexion (rouge)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorRed_tooltip = "Définir la valeur rouge du message de déconnexion de 0.0 à 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorGreen = "Couleur RVB du message de déconnexion (vert)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorGreen_tooltip = "Définir la valeur verte du message de déconnexion de 0.0 à 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorBlue = "Couleur RVB du message de déconnexion (bleu)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorBlue_tooltip = "Définir la valeur bleue du message de déconnexion de 0.0 à 1.0",
+
+}

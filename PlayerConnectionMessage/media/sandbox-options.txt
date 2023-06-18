@@ -1,0 +1,90 @@
+VERSION = 1,
+
+option PlayerConnectionMessage.disableDeathMessage = {
+	type = boolean,
+	default = true,
+	page = PlayerConnectionMessage,
+	translation = PlayerConnectionMessage_disableDeathMessage,
+}
+
+option PlayerConnectionMessage.disableKillMessage = {
+	type = boolean,
+	default = true,
+	page = PlayerConnectionMessage,
+	translation = PlayerConnectionMessage_disableKillMessage,
+}
+
+option PlayerConnectionMessage.hideAdmin = {
+	type = boolean,
+	default = false,
+	page = PlayerConnectionMessage,
+	translation = PlayerConnectionMessage_hideAdmin,
+}
+
+option PlayerConnectionMessage.hideModerator = {
+	type = boolean,
+	default = false,
+	page = PlayerConnectionMessage,
+	translation = PlayerConnectionMessage_hideModerator,
+}
+
+option PlayerConnectionMessage.hideStaff = {
+	type = boolean,
+	default = false,
+	page = PlayerConnectionMessage,
+	translation = PlayerConnectionMessage_hideStaff,
+}
+
+option PlayerConnectionMessage.connectedMessageColorRed = {
+	type = double,
+	default = 0,
+	min = 0,
+	max = 1,
+	page = PlayerConnectionMessage,
+	translation = PlayerConnectionMessage_connectedMessageColorRed,
+}
+
+option PlayerConnectionMessage.connectedMessageColorGreen = {
+	type = double,
+	default = 0.7,
+	min = 0,
+	max = 1,
+	page = PlayerConnectionMessage,
+	translation = PlayerConnectionMessage_connectedMessageColorGreen,
+}
+
+option PlayerConnectionMessage.connectedMessageColorBlue = {
+	type = double,
+	default = 1,
+	min = 0,
+	max = 1,
+	page = PlayerConnectionMessage,
+	translation = PlayerConnectionMessage_connectedMessageColorBlue,
+}
+
+option PlayerConnectionMessage.disconnectedMessageColorRed = {
+	type = double,
+	default = 1,
+	min = 0,
+	max = 1,
+	page = PlayerConnectionMessage,
+	translation = PlayerConnectionMessage_disconnectedMessageColorRed,
+}
+
+option PlayerConnectionMessage.disconnectedMessageColorGreen = {
+	type = double,
+	default = 0.3,
+	min = 0,
+	max = 1,
+	page = PlayerConnectionMessage,
+	translation = PlayerConnectionMessage_disconnectedMessageColorGreen,
+}
+
+option PlayerConnectionMessage.disconnectedMessageColorBlue = {
+	type = double,
+	default = 0,
+	min = 0,
+	max = 1,
+	page = PlayerConnectionMessage,
+	translation = PlayerConnectionMessage_disconnectedMessageColorBlue,
+}

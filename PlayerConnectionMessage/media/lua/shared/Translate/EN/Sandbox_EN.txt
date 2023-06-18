@@ -1,0 +1,38 @@
+Sandbox_EN = {
+
+    Sandbox_PlayerConnectionMessage = "Player Connection Message",
+
+    Sandbox_PlayerConnectionMessage_disableDeathMessage = "Disable Death Message",
+    Sandbox_PlayerConnectionMessage_disableDeathMessage_tooltip = "Set to 'true' to disable death messages including kills",
+
+    Sandbox_PlayerConnectionMessage_disableKillMessage = "Disable Kill Message",
+    Sandbox_PlayerConnectionMessage_disableKillMessage_tooltip = "Set to 'true' to disable kill messages only",
+
+    Sandbox_PlayerConnectionMessage_hideAdmin = "Hide Admin",
+    Sandbox_PlayerConnectionMessage_hideAdmin_tooltip = "Set to 'true' to hide admin connection messages",
+
+    Sandbox_PlayerConnectionMessage_hideModerator = "Hide Moderator",
+    Sandbox_PlayerConnectionMessage_hideModerator_tooltip = "Set to 'true' to hide moderator connection messages",
+
+    Sandbox_PlayerConnectionMessage_hideStaff = "Hide Staff",
+    Sandbox_PlayerConnectionMessage_hideStaff_tooltip = "Set to 'true' to hide staff connection messages",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorRed = "Connection Message RGB Color (Red)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorRed_tooltip = "Set the Red value of the connection message from 0.0 to 1.0",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorGreen = "Connection Message RGB Color (Green)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorGreen_tooltip = "Set the Green value of the connection message from 0.0 to 1.0",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorBlue = "Connection Message RGB Color (Blue)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorBlue_tooltip = "Set the Blue value of the connection message from 0.0 to 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorRed = "Disconnection Message RGB Color (Red)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorRed_tooltip = "Set the Red value of the disconnection message from 0.0 to 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorGreen = "Disconnection Message RGB Color (Green)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorGreen_tooltip = "Set the Green value of the disconnection message from 0.0 to 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorBlue = "Disconnection Message RGB Color (Blue)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorBlue_tooltip = "Set the Blue value of the disconnection message from 0.0 to 1.0",
+
+}
