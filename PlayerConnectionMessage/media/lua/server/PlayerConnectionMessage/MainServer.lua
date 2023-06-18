@@ -19,7 +19,7 @@ local function OnTick(tick)
         local username = player:getUsername()
         local accessLevel = player:getAccessLevel()
         
-        if not cachedPlayers[username] and not player:isDead() then
+        if not cachedPlayers[username] and player and not player:isDead() then
             cachedPlayers[username] = player
             cachedUsernames:add(username)
             cachedRoles:add(accessLevel)
@@ -33,9 +33,10 @@ local function OnTick(tick)
     ---@param player IsoPlayer
     for username, player in pairs(cachedPlayers) do
         local accessLevel = player:getAccessLevel()
-        if player:isDead() then
+        if player and player:isDead() then
+            local index = cachedUsernames:indexOf(username)
             cachedUsernames:remove(username)
-            cachedRoles:remove(accessLevel)
+            cachedRoles:remove(index)
             cachedPlayers[username] = nil
 
             local killer = player and player:getAttackedBy() and player:getAttackedBy():getUsername()
@@ -47,10 +48,10 @@ local function OnTick(tick)
     --- Look for player disconnected
     for i = 0, cachedUsernames:size() - 1 do
         local username = cachedUsernames:get(i)
-        local accessLevel = cachedRoles:get(i) or "None"
-        if not players:contains(cachedPlayers[username]) then
+        if cachedPlayers[username] and not players:contains(cachedPlayers[username]) then
+            local accessLevel = cachedRoles:get(i) or "None"
             cachedUsernames:remove(username)
-            cachedRoles:remove(accessLevel)
+            cachedRoles:remove(i)
             cachedPlayers[username] = nil
 
             sendServerCommand("PlayerConnectionMessage", "playerDisconnected", { username = username, accessLevel = accessLevel })
