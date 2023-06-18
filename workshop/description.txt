@@ -9,3 +9,6 @@ With customizable sandbox settings,
 - Hide connection messages for admins, moderators, and staff.
 - Hide death and/or kill messages.
 - Customize the message colors to suit your preferences. 
+
+[b]Fork on Github[/b]
+https://github.com/Konijima/PlayerConnectionMessage
