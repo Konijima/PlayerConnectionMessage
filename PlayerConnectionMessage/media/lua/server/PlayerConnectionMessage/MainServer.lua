@@ -7,10 +7,11 @@ local cachedRoles = ArrayList.new()
 
 local ticks = 0
 local function OnTick(tick)
-    if ticks < 20 then ticks = ticks + tick return end
-    ticks = 0
+    local players = getOnlinePlayers() or ArrayList.new()
 
-    local players = getOnlinePlayers()
+    --- Add ticks based on amount of online players
+    if ticks <= players:size() then ticks = ticks + tick return end
+    ticks = 0
     
     --- Look for player connected
     for i = 0, players:size() - 1 do
@@ -32,8 +33,8 @@ local function OnTick(tick)
     --- Look for player death
     ---@param player IsoPlayer
     for username, player in pairs(cachedPlayers) do
-        local accessLevel = player:getAccessLevel()
-        if player and player:isDead() then
+        if player:isDead() then
+            local accessLevel = player:getAccessLevel()
             local index = cachedUsernames:indexOf(username)
             cachedUsernames:remove(username)
             cachedRoles:remove(index)
@@ -41,7 +42,7 @@ local function OnTick(tick)
 
             local killer = player and player:getAttackedBy() and player:getAttackedBy():getUsername()
             sendServerCommand("PlayerConnectionMessage", "playerDied", { username = username, accessLevel = accessLevel, killer = killer })
-            PlayerConnectionMessage.appendToLog(username, player:getAccessLevel(), "died", killer)
+            PlayerConnectionMessage.appendToLog(username, accessLevel, "died", killer)
         end
     end
 
