@@ -1,9 +1,7 @@
 local PlayerConnectionMessage = {}
 
----@param player IsoPlayer|string
-function PlayerConnectionMessage.doConnect(player, accessLevel)
-	local username = type(player) == "string" and player or player:getUsername()
-
+---@param username string
+function PlayerConnectionMessage.doConnect(username, accessLevel)
 	local isHidden = SandboxVars.PlayerConnectionMessage.hideAdmin and accessLevel == "Admin" or
 					 SandboxVars.PlayerConnectionMessage.hideModerator and accessLevel == "Moderator" or
 					 SandboxVars.PlayerConnectionMessage.hideStaff and accessLevel ~= "None" and accessLevel ~= "Admin" and accessLevel ~= "Moderator"
@@ -14,11 +12,9 @@ function PlayerConnectionMessage.doConnect(player, accessLevel)
 	end
 end
 
----@param player IsoPlayer|string
+---@param username string
 ---@param killer string
-function PlayerConnectionMessage.doDeath(player, accessLevel, killer)
-	local username = type(player) == "string" and player or player:getUsername()
-
+function PlayerConnectionMessage.doDeath(username, accessLevel, killer)
 	local isHidden = SandboxVars.PlayerConnectionMessage.hideAdmin and accessLevel == "Admin" or
 					 SandboxVars.PlayerConnectionMessage.hideModerator and accessLevel == "Moderator" or
 					 SandboxVars.PlayerConnectionMessage.hideStaff and accessLevel ~= "None" and accessLevel ~= "Admin" and accessLevel ~= "Moderator"
@@ -33,10 +29,8 @@ function PlayerConnectionMessage.doDeath(player, accessLevel, killer)
 	end
 end
 
----@param player IsoPlayer|string
-function PlayerConnectionMessage.doDisconnect(player, accessLevel)
-	local username = type(player) == "string" and player or player:getUsername()
-
+---@param username string
+function PlayerConnectionMessage.doDisconnect(username, accessLevel)
 	local isHidden = SandboxVars.PlayerConnectionMessage.hideAdmin and accessLevel == "Admin" or
 					 SandboxVars.PlayerConnectionMessage.hideModerator and accessLevel == "Moderator" or
 					 SandboxVars.PlayerConnectionMessage.hideStaff and accessLevel ~= "None" and accessLevel ~= "Admin" and accessLevel ~= "Moderator"
@@ -112,9 +106,9 @@ function PlayerConnectionMessage.appendToLog(username, role, event, killer)
 	local writer = getFileWriter('PlayerConnectionMessage.jsonl', true, true)
 	if writer then
 		if killer then
-			writer:writeln('{"username": "' .. username .. '", "role": "' .. role .. '", "event": "' .. event .. '", "killer": "' .. killer .. '"}')
+			writer:writeln('{"username": "' .. tostring(username) .. '", "role": "' .. tostring(role) .. '", "event": "' .. tostring(event) .. '", "killer": "' .. tostring(killer) .. '"}')
 		else
-			writer:writeln('{"username": "' .. username .. '", "role": "' .. role .. '", "event": "' .. event .. '"}')
+			writer:writeln('{"username": "' .. tostring(username) .. '", "role": "' .. tostring(role) .. '", "event": "' .. tostring(event) .. '"}')
 		end
 		writer:close()
 	end
