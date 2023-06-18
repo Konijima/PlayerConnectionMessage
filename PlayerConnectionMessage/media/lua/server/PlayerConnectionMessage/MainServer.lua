@@ -43,7 +43,7 @@ local function OnTick(tick)
             cachedRoles:remove(index)
             cachedPlayers[username] = nil
 
-            local killer = player and player:getAttackedBy() and player:getAttackedBy():getUsername()
+            local killer = player and player:getAttackedBy() and player:getAttackedBy():getUsername() or nil
             sendServerCommand("PlayerConnectionMessage", "playerDied", { username = username, accessLevel = accessLevel, killer = killer })
             PlayerConnectionMessage.appendToLog(username, accessLevel, "died", killer)
         end
@@ -64,3 +64,5 @@ local function OnTick(tick)
     end
 end
 Events.OnTick.Add(OnTick)
+
+-- /reloadlua server/PlayerConnectionMessage/MainServer.lua
