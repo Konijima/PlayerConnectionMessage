@@ -28,6 +28,7 @@ local function OnTick(tick)
             cachedUsernames:add(username)
             cachedRoles:add(accessLevel)
 
+            print("PlayerConnectionMessage", "playerConnected", username)
             sendServerCommand("PlayerConnectionMessage", "playerConnected", { username = username, accessLevel = accessLevel })
             PlayerConnectionMessage.appendToLog(username, accessLevel, "connected")
         end
@@ -43,7 +44,8 @@ local function OnTick(tick)
             cachedRoles:remove(index)
             cachedPlayers[username] = nil
 
-            local killer = player and player:getAttackedBy() and player:getAttackedBy():getUsername() or nil
+            local killer = instanceof(player, "IsoPlayer") and instanceof(player:getAttackedBy(), "IsoPlayer") and player:getAttackedBy():getUsername()
+            print("PlayerConnectionMessage", "playerDied", username, killer)
             sendServerCommand("PlayerConnectionMessage", "playerDied", { username = username, accessLevel = accessLevel, killer = killer })
             PlayerConnectionMessage.appendToLog(username, accessLevel, "died", killer)
         end
@@ -58,6 +60,7 @@ local function OnTick(tick)
             cachedRoles:remove(i)
             cachedPlayers[username] = nil
 
+            print("PlayerConnectionMessage", "playerDisconnected", username)
             sendServerCommand("PlayerConnectionMessage", "playerDisconnected", { username = username, accessLevel = accessLevel })
             PlayerConnectionMessage.appendToLog(username, accessLevel, "disconnected")
         end
