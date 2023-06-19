@@ -1,0 +1,8 @@
+IGUI_UA = {
+    
+    IGUI_PlayerConnectionMessage_Connected = "%1 приєднано.",
+    IGUI_PlayerConnectionMessage_Disconnected = "%1 відключено.",
+    IGUI_PlayerConnectionMessage_Killed = "%1 було вбито %2",
+    IGUI_PlayerConnectionMessage_Died = "Смерть зустріла %1.",
+
+}
