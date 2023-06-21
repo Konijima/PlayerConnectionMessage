@@ -1,0 +1,8 @@
+IGUI_RU = {
+    
+    IGUI_PlayerConnectionMessage_Connected = "%1 присоединился.",
+    IGUI_PlayerConnectionMessage_Disconnected = "%1 вышел.",
+    IGUI_PlayerConnectionMessage_Killed = "%2 убил %1",
+    IGUI_PlayerConnectionMessage_Died = "%1 умер.",
+
+}

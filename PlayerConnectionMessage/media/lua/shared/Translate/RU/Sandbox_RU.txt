@@ -1,0 +1,36 @@
+Sandbox_RU = {
+    Sandbox_PlayerConnectionMessage = "Сообщение о подключении игрока",
+
+    Sandbox_PlayerConnectionMessage_disableDeathMessage = "Отключить сообщение о смерти",
+    Sandbox_PlayerConnectionMessage_disableDeathMessage_tooltip = "Установите значение 'true', чтобы отключить сообщения о смерти, включая убийства",
+
+    Sandbox_PlayerConnectionMessage_disableKillMessage = "Отключить сообщение об убийстве",
+    Sandbox_PlayerConnectionMessage_disableKillMessage_tooltip = "Установите значение 'true', чтобы отключить только сообщения об убийстве",
+
+    Sandbox_PlayerConnectionMessage_hideAdmin = "Скрыть админа",
+    Sandbox_PlayerConnectionMessage_hideAdmin_tooltip = "Установите значение 'true', чтобы скрыть сообщения о подключении администратора",
+
+    Sandbox_PlayerConnectionMessage_hideModerator = "Скрыть модератора",
+    Sandbox_PlayerConnectionMessage_hideModerator_tooltip = "Установите значение 'true', чтобы скрыть сообщения о подключении модератора",
+
+    Sandbox_PlayerConnectionMessage_hideStaff = "Скрыть персонал",
+    Sandbox_PlayerConnectionMessage_hideStaff_tooltip = "Установите значение 'true', чтобы скрыть сообщения о подключении персонала",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorRed = "Цвет сообщения о подключении (красный)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorRed_tooltip = "Установите значение красного цвета сообщения о подключении от 0.0 до 1.0",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorGreen = "Цвет сообщения о подключении (зеленый)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorGreen_tooltip = "Установите значение зеленого цвета сообщения о подключении от 0.0 до 1.0",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorBlue = "Цвет сообщения о подключении (синий)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorBlue_tooltip = "Установите значение синего цвета сообщения о подключении от 0.0 до 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorRed = "Цвет сообщения о отключении (красный)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorRed_tooltip = "Установите значение красного цвета сообщения об отключении от 0.0 до 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorGreen = "Цвет сообщения о отключении (зеленый)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorGreen_tooltip = "Установите значение зеленого цвета сообщения об отключении от 0.0 до 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorBlue = "Цвет сообщения о отключении (синий)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorBlue_tooltip = "Установите значение синего цвета сообщения об отключении от 0.0 до 1.0",
+}
