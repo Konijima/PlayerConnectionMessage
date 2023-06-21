@@ -1,0 +1,6 @@
+IGUI_ES = {
+    IGUI_PlayerConnectionMessage_Connected = "%1 se unió.",
+    IGUI_PlayerConnectionMessage_Disconnected = "%1 se ha desconectado.",
+    IGUI_PlayerConnectionMessage_Killed = "%2 mató a %1",
+    IGUI_PlayerConnectionMessage_Died = "%1 murió.",
+}

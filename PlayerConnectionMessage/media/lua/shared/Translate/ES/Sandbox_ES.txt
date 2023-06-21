@@ -1,0 +1,36 @@
+Sandbox_ES = {
+    Sandbox_PlayerConnectionMessage = "Mensaje de conexión del jugador",
+
+    Sandbox_PlayerConnectionMessage_disableDeathMessage = "Desactivar mensaje de muerte",
+    Sandbox_PlayerConnectionMessage_disableDeathMessage_tooltip = "Establecer en 'true' para desactivar los mensajes de muerte, incluyendo las muertes",
+
+    Sandbox_PlayerConnectionMessage_disableKillMessage = "Desactivar mensaje de eliminación",
+    Sandbox_PlayerConnectionMessage_disableKillMessage_tooltip = "Establecer en 'true' para desactivar los mensajes de eliminación únicamente",
+
+    Sandbox_PlayerConnectionMessage_hideAdmin = "Ocultar administrador",
+    Sandbox_PlayerConnectionMessage_hideAdmin_tooltip = "Establecer en 'true' para ocultar los mensajes de conexión del administrador",
+
+    Sandbox_PlayerConnectionMessage_hideModerator = "Ocultar moderador",
+    Sandbox_PlayerConnectionMessage_hideModerator_tooltip = "Establecer en 'true' para ocultar los mensajes de conexión del moderador",
+
+    Sandbox_PlayerConnectionMessage_hideStaff = "Ocultar personal",
+    Sandbox_PlayerConnectionMessage_hideStaff_tooltip = "Establecer en 'true' para ocultar los mensajes de conexión del personal",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorRed = "Color RGB del mensaje de conexión (Rojo)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorRed_tooltip = "Establecer el valor Rojo del mensaje de conexión de 0.0 a 1.0",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorGreen = "Color RGB del mensaje de conexión (Verde)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorGreen_tooltip = "Establecer el valor Verde del mensaje de conexión de 0.0 a 1.0",
+
+    Sandbox_PlayerConnectionMessage_connectedMessageColorBlue = "Color RGB del mensaje de conexión (Azul)",
+    Sandbox_PlayerConnectionMessage_connectedMessageColorBlue_tooltip = "Establecer el valor Azul del mensaje de conexión de 0.0 a 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorRed = "Color RGB del mensaje de desconexión (Rojo)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorRed_tooltip = "Establecer el valor Rojo del mensaje de desconexión de 0.0 a 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorGreen = "Color RGB del mensaje de desconexión (Verde)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorGreen_tooltip = "Establecer el valor Verde del mensaje de desconexión de 0.0 a 1.0",
+
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorBlue = "Color RGB del mensaje de desconexión (Azul)",
+    Sandbox_PlayerConnectionMessage_disconnectedMessageColorBlue_tooltip = "Establecer el valor Azul del mensaje de desconexión de 0.0 a 1.0",
+}
