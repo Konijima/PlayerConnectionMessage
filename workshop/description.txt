@@ -16,6 +16,8 @@ https://github.com/Konijima/PlayerConnectionMessage
 
 [b]Translations:[/b]
 - English
+- Spanish
 - French
 - Italian
+- Russian
 - Ukrainian
