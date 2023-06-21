@@ -3,12 +3,19 @@
 Stay informed about who joins or leaves the server, as well as when players meet their demise or score kills. 
 
 The mod also logs these events in JSONL format for convenient analysis.
-File can be found on the server at this path: [code]lua/PlayerConnectionMessage.jsonl[/code] 
+This JSONL file could technically be usefull to a script/bot to post on discord and other API.
+File can be found on your server here: [code]your-server/lua/PlayerConnectionMessage.jsonl[/code]
 
-With customizable sandbox settings:
+[b]Sandbox Settings:[/b]
 - Hide connection messages for admins, moderators, and staff.
 - Hide death and/or kill messages.
 - Customize the message colors to suit your preferences. 
 
-[b]Fork on Github[/b]
+[b]Fork & Contribute on Github:[/b]
 https://github.com/Konijima/PlayerConnectionMessage
+
+[b]Translations:[/b]
+- English
+- French
+- Italian
+- Ukrainian
