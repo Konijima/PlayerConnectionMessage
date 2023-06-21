@@ -1,8 +1,8 @@
 IGUI_FR = {
     
     IGUI_PlayerConnectionMessage_Connected = "%1 a rejoint.",
-    IGUI_PlayerConnectionMessage_Disconnected = "%1 a quittÃ©.",
-    IGUI_PlayerConnectionMessage_Killed = "%1 a Ã©tÃ© tuÃ© par %2",
+    IGUI_PlayerConnectionMessage_Disconnected = "%1 a quitté.",
+    IGUI_PlayerConnectionMessage_Killed = "%1 a été tué par %2",
     IGUI_PlayerConnectionMessage_Died = "%1 est mort.",
 
 }
