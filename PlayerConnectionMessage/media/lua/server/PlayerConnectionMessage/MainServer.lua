@@ -12,7 +12,7 @@ local function OnTick(tick)
     --- Don't tick if no player online
     -- if players:size() == 0 then return end
 
-    --- Add ticks based on amount of online players
+    --- Add ticks based on amount of online players, slow down the check when many players are online
     if ticks <= players:size() + 1 then ticks = ticks + tick return end
     ticks = 0
     
@@ -52,17 +52,25 @@ local function OnTick(tick)
     end
 
     --- Look for player disconnected
+    local removeTable = {}
     for i = 0, cachedUsernames:size() - 1 do
         local username = cachedUsernames:get(i)
-        if cachedPlayers[username] and not players:contains(cachedPlayers[username]) then
+        if username and cachedPlayers[username] and not players:contains(cachedPlayers[username]) then
             local accessLevel = cachedRoles:get(i) or "None"
-            cachedUsernames:remove(username)
+            table.insert(removeTable, username) --- Insert into a remove table
             cachedRoles:remove(i)
             cachedPlayers[username] = nil
 
             print("PlayerConnectionMessage", "playerDisconnected", username)
             sendServerCommand("PlayerConnectionMessage", "playerDisconnected", { username = username, accessLevel = accessLevel })
             PlayerConnectionMessage.appendToLog(username, accessLevel, "disconnected")
+        end
+    end
+
+    --- Clear cached usernames
+    for _, username in pairs(removeTable) do
+        if cachedUsernames:contains(username) then
+            cachedUsernames:remove(username)
         end
     end
 end
